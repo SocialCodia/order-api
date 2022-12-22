@@ -5,7 +5,7 @@ class OrderValidator {
 
     addOrder = Joi.object({
         customerId: Joi.string().required(),
-        comapanyId: Joi.string().required(),
+        companyId: Joi.string().required(),
         orderNumber: Joi.string().required(),
         orderDate: Joi.date().required(),
         shipmentDate: Joi.date().required(),

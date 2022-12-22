@@ -24,7 +24,7 @@ Customer.init({
 
 Customer.hasMany(Order,{
     sourceKey:'id',
-    foreignKey:'customerId'
+    foreignKey:{allowNull:false,name:'customerId'}
 })
 
 export default Customer

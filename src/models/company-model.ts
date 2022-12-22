@@ -24,7 +24,7 @@ Company.init({
 
 Company.hasMany(Order,{
     sourceKey:'id',
-    foreignKey:'companyId'
+    foreignKey:{allowNull:false,name:'companyId'}
 });
 
 export default Company

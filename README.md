@@ -21,8 +21,6 @@ You need to submit your code and schema of your database & we are expecting you 
  assignment till evening.
 
 
-
-
 # ADD ORDER :
 
 *ENDPONT* 
@@ -36,7 +34,7 @@ http://localhost:5000/api/v1/order/add
 ```
 {
     "customerId":"1",
-    "comapanyId":"1",
+    "companyId":"1",
     "orderDate":"12-12-2020",
     "orderNumber":"345678",
     "shipmentDate":"12-12-2020",
@@ -51,7 +49,7 @@ http://localhost:5000/api/v1/order/add
     "fromQuotation":"I don't know what is this?",
     "items":[
         {
-        "productId":"1",
+        "productId":"11",
         "quantity":1,
         "unitPrice":100,
         "tax":10,
@@ -85,7 +83,7 @@ http://localhost:5000/api/v1/orders
     "message": "Orders Found",
     "data": [
         {
-            "id": 1,
+            "id": 6,
             "orderNumber": 345678,
             "orderDate": "2020-12-11T18:30:00.000Z",
             "shipmentDate": "2020-12-11T18:30:00.000Z",
@@ -98,10 +96,10 @@ http://localhost:5000/api/v1/orders
             "shipStatus": "1",
             "deliveryStatus": "1",
             "fromQuotation": "I don't know what is this?",
-            "createdAt": "2022-12-22T09:34:30.000Z",
-            "updatedAt": "2022-12-22T09:34:30.000Z",
+            "createdAt": "2022-12-22T10:00:44.000Z",
+            "updatedAt": "2022-12-22T10:00:44.000Z",
             "customerId": 1,
-            "companyId": null,
+            "companyId": 1,
             "OrderdProducts": [
                 {
                     "id": 1,
@@ -109,9 +107,9 @@ http://localhost:5000/api/v1/orders
                     "unitPrice": 100,
                     "tax": 10,
                     "amount": 110,
-                    "createdAt": "2022-12-22T09:34:30.000Z",
-                    "updatedAt": "2022-12-22T09:34:30.000Z",
-                    "orderId": 1
+                    "createdAt": "2022-12-22T10:00:44.000Z",
+                    "updatedAt": "2022-12-22T10:00:44.000Z",
+                    "orderId": 6
                 },
                 {
                     "id": 2,
@@ -119,9 +117,9 @@ http://localhost:5000/api/v1/orders
                     "unitPrice": 100,
                     "tax": 10,
                     "amount": 110,
-                    "createdAt": "2022-12-22T09:34:30.000Z",
-                    "updatedAt": "2022-12-22T09:34:30.000Z",
-                    "orderId": 1
+                    "createdAt": "2022-12-22T10:00:44.000Z",
+                    "updatedAt": "2022-12-22T10:00:44.000Z",
+                    "orderId": 6
                 }
             ]
         }

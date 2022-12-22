@@ -106,7 +106,7 @@ Order.init(
 
 Order.hasMany(OrderdProduct, {
     sourceKey: 'id',
-    foreignKey: 'orderId'
+    foreignKey: {allowNull:false,name:'orderId'}
 })
 
 export default Order
