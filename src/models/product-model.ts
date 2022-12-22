@@ -1,5 +1,6 @@
 import {Model,DataTypes} from "sequelize"
 import sequelize from "./index";
+import OrderdProduct from "./orderd-product";
 
 class Product extends Model{
     declare id:number;
@@ -36,4 +37,10 @@ Product.init({
     tableName:'products',
 })
 
+Product.hasMany(OrderdProduct,{
+    sourceKey:'id',
+    foreignKey:{allowNull:false,name:'productId'}
+});
+
 export default Product
+
