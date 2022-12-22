@@ -10,6 +10,7 @@ import OrderdProduct from "./models/orderd-product"
 import Customer from "./models/customer-model"
 import Company from "./models/company-model"
 
+
 // Temprory synchronizing the table from here
 Product.sync()
 Customer.sync()
@@ -24,6 +25,7 @@ const PORT: Number = Number(process.env.PORT || 5000)
 app.use(express.json())
 
 //Api Routes
+
 app.use('/api/v1/', orderRoute)
 
 //Not Found Middleware
