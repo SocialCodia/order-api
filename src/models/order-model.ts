@@ -53,7 +53,8 @@ Order.init(
         },
         orderNumber: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
+            unique:true
         },
         orderDate: {
             type: DataTypes.DATE
